@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer components {
+    .radio-brand {
+        --p-radiobutton-checked-background: theme(colors.green.500);
+        --p-radiobutton-checked-border-color: theme(colors.green.500);
+        --p-radiobutton-hover-border-color: theme(colors.green.600);
+        --p-radiobutton-focus-ring-color: theme(colors.green.500 / 40%);
+    }
+}
+
+.chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grass-bg {
+    background-image: url('/grass.png');
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: auto 120px;
+}
