@@ -95,7 +95,7 @@ const validation = computed(() => {
                 <img class="w-30 h-30" src="/make-it-rain.svg">
             </div>
             <div>
-                <SelectButton v-model="difficultySelected" :options="difficulty"/>
+                <SelectButton v-model="difficultySelected" @change="recalculate()"  :options="difficulty"/>
             </div>
             <div class="w-full max-w-md mt-6 flex flex-col gap-2 p-3 md:flex-row ">
                 <div class="flex flex-row gap-4">
