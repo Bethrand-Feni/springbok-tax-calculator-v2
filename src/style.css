@@ -20,4 +20,5 @@
     background-repeat: repeat-x;
     background-position: bottom center;
     background-size: auto 120px;
+    pointer-events: none;
 }

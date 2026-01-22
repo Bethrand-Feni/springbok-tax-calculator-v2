@@ -92,7 +92,7 @@ const validation = computed(() => {
 
         <div class=" flex-1 flex flex-col items-center gap-3 md:w-[700px] md:shadow-2xl md:border md:border-gray-100 md:rounded-lg min-h-0 mb-20 p-6">
             <div class="flex justify-end w-full -translate-y-23 hidden md:block">
-                <img class="w-30 h-30" src="/make-it-rain.svg">
+                <img src="/make-it-rain.svg" draggable="false" class="w-30 h-30 pointer-events-none">
             </div>
             <div>
                 <SelectButton v-model="difficultySelected" @change="recalculate()"  :options="difficulty"/>
@@ -189,14 +189,14 @@ const validation = computed(() => {
                 <span class="mb-5"> Note: Results are not fully catered for all scenarios and should be used as an indicator only</span>
                 <div class=" gap-2 w-full h-[1px] bg-gray-300"></div>
                 <div class="flex flex-row gap-7 md:gap-14 justify-center items-center mt-3">
-                    <img src="/wallet.svg" alt="" class="w-25 h-25" />
+                    <img src="/wallet.svg" draggable="false" alt="" class="w-25 h-25 pointer-events-none" />
                     <div class="flex flex-col gap-2">
                         <span class="text-sm">Your Income after tax</span>
                         <span class="text-lg font-bold">R {{netIncome}}</span>
                     </div>
                     <Button
                     icon="pi pi-refresh"
-                    @click="recalculate"
+                    @click="calculateResults()"
                     class="!bg-[#1F2937] !text-white !border !border-[#1F2937] hover:!bg-[#374151] hover:!border-[#374151]"
                     />               
                  </div>
