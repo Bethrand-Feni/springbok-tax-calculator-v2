@@ -2,9 +2,9 @@
 
 @layer components {
     .radio-brand {
-        --p-radiobutton-checked-background: theme(colors.green.500);
-        --p-radiobutton-checked-border-color: theme(colors.green.500);
-        --p-radiobutton-hover-border-color: theme(colors.green.600);
+        --p-radiobutton-checked-background: theme(colors.green.600);
+        --p-radiobutton-checked-border-color: theme(colors.green.600);
+        --p-radiobutton-hover-border-color: theme(colors.green.700);
         --p-radiobutton-focus-ring-color: theme(colors.green.500 / 40%);
     }
 }
