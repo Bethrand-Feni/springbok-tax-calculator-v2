@@ -80,8 +80,8 @@ const validation = computed(() => {
 </script>
 
 <template>
-    <div class="min-h-dvh w-full flex flex-col md:items-center grass-bg">
-        <div class="w-full max-w-md text-center p-6 mb-10">
+    <div class="min-h-dvh w-full flex flex-col md:items-center grass-bg" mb-10>
+        <div class="w-full max-w-md text-center p-6">
             <h1 class="chewy-regular text-5xl font-bold ">
                 <span class="text-[#1F2937]">South African </span>
                 <span class="text-[#1F2937]">Tax </span>
